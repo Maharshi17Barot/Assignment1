@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-Assignment1-7e3ca2c7-c273-414d-abf1-f72d7a7a01ae</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20230301165551_finalsetup.cs" />
+    <Compile Remove="Data\Migrations\20230301165551_finalsetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20230301183418_finalsetup.cs" />
+    <Compile Remove="Data\Migrations\20230301183418_finalsetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20230301190226_finalsetup.cs" />
+    <Compile Remove="Data\Migrations\20230301190226_finalsetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20230301193102_finalsetup.cs" />
+    <Compile Remove="Data\Migrations\20230301193102_finalsetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20230301194352_finalsetup.cs" />
+    <Compile Remove="Data\Migrations\20230301194352_finalsetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20230301194815_finalsetup.cs" />
+    <Compile Remove="Data\Migrations\20230301194815_finalsetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20230301200222_finalsetup.cs" />
+    <Compile Remove="Data\Migrations\20230301200222_finalsetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20230301200445_finalsetup.cs" />
+    <Compile Remove="Data\Migrations\20230301200445_finalsetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20230301201937_finalsetup.cs" />
+    <Compile Remove="Data\Migrations\20230301201937_finalsetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20230301204019_finalsetup.cs" />
+    <Compile Remove="Data\Migrations\20230301204019_finalsetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20230301211855_finalsetup.cs" />
+    <Compile Remove="Data\Migrations\20230301211855_finalsetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20230301211936_finalsetup.cs" />
+    <Compile Remove="Data\Migrations\20230301211936_finalsetup.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Migrations\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
+  </ItemGroup>
+
+</Project>
